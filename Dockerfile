@@ -2,7 +2,6 @@ FROM ubuntu:14.04
 MAINTAINER swun9 "swung.cn@gmail.com"
 ENV REFRESHED_AT 2015-01-11
 
-archive.ubuntu.com
 RUN \
   sed -i 's/archive.ubuntu.com/mirrors.163.com/g' /etc/apt/sources.list && \
   apt-get -qq update
